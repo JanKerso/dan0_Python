@@ -1,6 +1,8 @@
 
 
 
+
+
 class Pravokotnik(object):
 	barva = "rdeca"
 	def __init__(self, a, b):
@@ -17,9 +19,19 @@ class Pravokotnik(object):
 	def __del__(self):
 		print("brisem pravokotnik :(")
 
+
 class Kvadrat(Pravokotnik):
 	def __init__(self, a):
 		super(Kvadrat, self).__init__(a, a)
+
+
+class Student(object):
+	
+	def __init__(self, ime, letnik):	
+		ocene = {}
+
+
+
 
 if __name__ == "__main__":
 	prav1 = Pravokotnik(5.0, 4.0)
@@ -32,3 +44,6 @@ if __name__ == "__main__":
 
 	kv1 = Kvadrat(4.0)
 	print(kv1.ploscina())
+
+	st = Student("Lojze", 4.)
+	print(st)
